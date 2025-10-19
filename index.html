@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Independence Women's Clinic - Serving Eastern Jackson County for nearly 70 years with compassionate OB/GYN care. Book your appointment online today.">
+    <title>Independence Women's Clinic | Trusted OB/GYN Care Since 1955</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Independence Women's Clinic</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="providers.html">Our Providers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#book-appointment" class="btn btn-primary btn-nav">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="currentColor"/>
+                    </svg>
+                    <span>KC Parent's Favorite OB/GYN Practice 2019</span>
+                </div>
+                <h1 class="hero-title">Compassionate Women's Healthcare for Nearly 70 Years</h1>
+                <p class="hero-subtitle">Expert obstetrics, gynecology, and midwifery services in Independence, Missouri. Your health, your choice, our commitment.</p>
+                <div class="hero-cta">
+                    <a href="#book-appointment" class="btn btn-primary btn-large">Book Appointment Online</a>
+                    <a href="tel:816-478-0220" class="btn btn-secondary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" fill="currentColor"/>
+                        </svg>
+                        Call (816) 478-0220
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <div class="trust-icon">⭐</div>
+                        <div class="trust-text">
+                            <strong>4.5 Stars</strong>
+                            <span>Google Rating</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">👥</div>
+                        <div class="trust-text">
+                            <strong>8 Providers</strong>
+                            <span>Expert Team</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🏆</div>
+                        <div class="trust-text">
+                            <strong>70 Years</strong>
+                            <span>Serving Community</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Booking Section -->
+    <section class="quick-booking" id="book-appointment">
+        <div class="container">
+            <div class="booking-card">
+                <div class="booking-header">
+                    <h2>Book Your Appointment Online</h2>
+                    <p>Schedule 24/7 - No phone call required</p>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentType">Appointment Type *</label>
+                            <select id="appointmentType" name="appointmentType" required>
+                                <option value="">Select type...</option>
+                                <option value="new-patient">New Patient Visit</option>
+                                <option value="annual-exam">Annual Exam</option>
+                                <option value="prenatal">Prenatal Care</option>
+                                <option value="gynecology">Gynecology Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredProvider">Preferred Provider</label>
+                            <select id="preferredProvider" name="preferredProvider">
+                                <option value="">No preference</option>
+                                <option value="dr-hall">Dr. Timothy A. Hall</option>
+                                <option value="dr-caffrey">Dr. Robert T. Caffrey</option>
+                                <option value="dr-lemberger">Dr. Michelle R. Lemberger</option>
+                                <option value="dr-ash">Dr. Alisa R. Ash</option>
+                                <option value="dr-moreno">Dr. Kiersten M. Moreno</option>
+                                <option value="dr-pung">Dr. Lyda D. Pung</option>
+                                <option value="dr-sundling">Dr. Amanda J. Sundling</option>
+                                <option value="emily-martinez">Emily Martinez, CNM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-full">Request Appointment</button>
+                    <p class="form-note">We'll confirm your appointment within 24 hours</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Women's Healthcare</h2>
+                <p>From adolescence through menopause, we're here for every stage of your life</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" fill="#E8F4F8"/>
+                            <path d="M24 14C18.48 14 14 18.48 14 24C14 29.52 18.48 34 24 34C29.52 34 34 29.52 34 24C34 18.48 29.52 14 24 14ZM24 28C21.79 28 20 26.21 20 24C20 21.79 21.79 20 24 20C26.21 20 28 21.79 28 24C28 26.21 26.21 28 24 28Z" fill="#0066A1"/>
+                        </svg>
+                    </div>
+                    <h3>Obstetrics</h3>
+                    <p>Comprehensive pregnancy care including high-risk management, ultrasound, and delivery options including VBAC.</p>
+                    <a href="services.html#obstetrics" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" fill="#FFF4E8"/>
+                            <path d="M24 14C18.48 14 14 18.48 14 24C14 29.52 18.48 34 24 34C29.52 34 34 29.52 34 24C34 18.48 29.52 14 24 14ZM26 29H22V25H26V29ZM26 23H22V19H26V23Z" fill="#D97706"/>
+                        </svg>
+                    </div>
+                    <h3>Gynecology</h3>
+                    <p>Routine exams, family planning, menopause management, and treatment for gynecological conditions.</p>
+                    <a href="services.html#gynecology" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" fill="#F0FDF4"/>
+                            <path d="M24 14C18.48 14 14 18.48 14 24C14 29.52 18.48 34 24 34C29.52 34 34 29.52 34 24C34 18.48 29.52 14 24 14ZM24 30C20.69 30 18 27.31 18 24C18 20.69 20.69 18 24 18C27.31 18 30 20.69 30 24C30 27.31 27.31 30 24 30Z" fill="#059669"/>
+                        </svg>
+                    </div>
+                    <h3>Midwifery Services</h3>
+                    <p>Personalized care with our certified nurse midwife Emily Martinez for a natural birth experience.</p>
+                    <a href="services.html#midwifery" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" fill="#FDF2F8"/>
+                            <path d="M24 14C18.48 14 14 18.48 14 24C14 29.52 18.48 34 24 34C29.52 34 34 29.52 34 24C34 18.48 29.52 14 24 14ZM25 29H23V23H25V29ZM25 21H23V19H25V21Z" fill="#DB2777"/>
+                        </svg>
+                    </div>
+                    <h3>Family Planning</h3>
+                    <p>Comprehensive contraceptive counseling and management to help you make informed decisions.</p>
+                    <a href="services.html#family-planning" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <h2>Why Choose Independence Women's Clinic?</h2>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Nearly 70 Years of Excellence</h4>
+                                <p>Trusted by generations of women in Eastern Jackson County since 1955.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Award-Winning Care</h4>
+                                <p>Voted KC Parent's Favorite OB/GYN Practice in 2019.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Expert Team of 8 Providers</h4>
+                                <p>7 board-certified physicians and 1 certified nurse midwife dedicated to your care.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Personalized, Compassionate Care</h4>
+                                <p>We take time to listen and create individualized treatment plans.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Convenient Online Booking</h4>
+                                <p>Schedule appointments 24/7 without waiting on hold.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Comprehensive Services</h4>
+                                <p>From routine exams to high-risk pregnancy care, all under one roof.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                </div>
+                <div class="why-choose-image">
+                    <div class="image-placeholder">
+                        <svg width="100%" height="100%" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="500" fill="#E8F4F8"/>
+                            <circle cx="200" cy="250" r="80" fill="#0066A1" opacity="0.1"/>
+                            <path d="M200 200L220 240H180L200 200Z" fill="#0066A1" opacity="0.2"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Patients Say</h2>
+                <p>Real experiences from real patients</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Dr. Southern and the entire team provided exceptional care throughout my pregnancy. I felt supported every step of the way."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>New Mom</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Emily Martinez is absolutely astounding! Her midwifery care made my birth experience exactly what I hoped for."</p>
+                    <div class="testimonial-author">
+                        <strong>Jennifer L.</strong>
+                        <span>Patient</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"I've been with Dr. Caffrey for over 24 years. The consistency and quality of care is unmatched."</p>
+                    <div class="testimonial-author">
+                        <strong>Patricia R.</strong>
+                        <span>Long-time Patient</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Exceptional Care?</h2>
+                <p>Join thousands of women who trust Independence Women's Clinic for their healthcare needs.</p>
+                <div class="cta-buttons">
+                    <a href="#book-appointment" class="btn btn-primary btn-large">Book Appointment Now</a>
+                    <a href="contact.html" class="btn btn-secondary btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Independence Women's Clinic</h3>
+                    <p>Serving Eastern Jackson County with compassionate women's healthcare for nearly 70 years.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Independencewomensclinic" target="_blank" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/independencewomensclinic" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="providers.html">Our Providers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#book-appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#obstetrics">Obstetrics</a></li>
+                        <li><a href="services.html#gynecology">Gynecology</a></li>
+                        <li><a href="services.html#midwifery">Midwifery</a></li>
+                        <li><a href="services.html#family-planning">Family Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 0C5.24 0 3 2.24 3 5c0 3.54 5 11 5 11s5-7.46 5-11c0-2.76-2.24-5-5-5zm0 7.5c-1.38 0-2.5-1.12-2.5-2.5S6.62 2.5 8 2.5s2.5 1.12 2.5 2.5S9.38 7.5 8 7.5z"/>
+                            </svg>
+                            Independence, Missouri
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M2 2.5C2 2.22 2.22 2 2.5 2h2.38c.24 0 .45.17.49.41l.34 1.83c.03.21-.09.41-.29.49l-.77.39c.55 1.39 1.66 2.5 3.05 3.05l.39-.77c.08-.2.28-.32.49-.29l1.83.34c.24.04.41.25.41.49v2.38c0 .28-.22.5-.5.5h-1c-3.59 0-6.5-2.91-6.5-6.5v-1z"/>
+                            </svg>
+                            (816) 478-0220
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M2 3.5C2 3.22 2.22 3 2.5 3h11c.28 0 .5.22.5.5v9c0 .28-.22.5-.5.5h-11c-.28 0-.5-.22-.5-.5v-9zm1 1.5v7h10v-7l-5 3-5-3zm0-1l5 3 5-3H3z"/>
+                            </svg>
+                            robert.caffrey@digichart.direct-ci.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Independence Women's Clinic. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Patient Portal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
